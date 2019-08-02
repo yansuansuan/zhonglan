@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./tubiao/iconfont.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <title>中岚签证</title>
+    <script>
+      $(function(){
+        $('.box1 .uls>li').click(function(event) {
+					$(this).addClass('li1');
+					$(this).siblings('li').removeClass('li1');
+				});
+        $('.box3 .card-ul>li').mouseenter(function(event) {
+					$(this).addClass('lis');
+					$(this).siblings('li').removeClass('lis');
+				});
+        $(window).scroll(function(e){
+          if($(this).scrollTop()>200){
+						$('.jiantou').css('display', 'block');
+					}else{
+						$('.jiantou').css('display', 'none');
+					}
+        })
+        $('.jiantou').click(function(){
+          $('body,html').animate({
+						'scrollTop':'0px'
+					}, 200)
+        })
+      })
+    </script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #header{
+        height: 82px;
+      }
+      .navs{
+        border-bottom: 2px solid #0ba1e4;
+        background: rgba(255,255,255,0.9);
+        padding: 15px 0;
+      }
+      .navs .navbar-brand{
+				padding: 0px 15px;
+			}
+      
+      .box1 .uls>li.li1 a{
+        color: #0ba1e4;
+      }
+      .box1 .uls>li>a{
+        font-size: 18px;
+        padding: 16px 25px 5px;
+      }
+      .box1 .uls>li>a:hover{
+        color: #0ba1e4;
+      }
+      .box1 .uls>li{
+        position: relative;
+      }
+      .box1 .uls>li.li1::after{
+				content: '';
+				width: 20px;
+				height: 1px;
+				background: #0ba1e4;
+				position: absolute;
+				left: 50%;
+				margin-left: -10px;
+      }
+      .box2{
+        text-align: center;
+      }  
+      .zms_1{
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .line {
+        border-top: 1px solid #0ba1e4;
+        width: 30px;
+      }
+      .lines{
+        border-top: 1px solid #fff;
+        width: 300px;
+      }
+      .line-blue{
+        margin: 25px auto 20px;
+        border-width:2px;
+        width: 400px; 
+      }
+      .index-row {
+        padding: 50px 0;
+      }
+      .line-big {
+        margin: 30px auto 26px;
+        border-width: 2px;
+        width: 80px;
+      }
+      .number{
+        font-size: 70px;
+        color:#0ba1e4;
+      }
+      .title{
+        color: #919191;
+      }
+      .our-you{
+        background: #e1e1e1;
+      }
+      .time{
+        text-align: center;
+        background-color: #fafafa;
+        border: 1px solid #c1c1c1;
+        padding: 35px;
+      }
+      .time p{
+        line-height: 1.5em;
+      }
+      .time .time-box{
+        color: #0ba1e4;
+        font-size: 80px;
+      }
+      .time:hover{
+        background-color: #0ba1e4;
+        border: 1px solid #0ba1e4;
+        box-shadow: 0 0 20px 0 rgba(45,183,245,.5);
+        color: #fff;
+      }
+      .time:hover>.time-box{
+        color: #fff
+      }
+      .title1{
+        color: rgb(41, 38, 38);
+        font-weight: 700;
+      }
+      .card-ul{
+        list-style: none;
+        text-align: center;
+      }
+      .card-ul>li{
+        border: 1px solid #c1c1c1;
+        background: #fafafa;
+        transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+      }
+      .card-ul .lis{
+        background: #0ba1e4;
+        border: 1px solid #0ba1e4;
+        box-shadow: 0 0 20px 0 rgba(45,183,245,.5);
+        color: #fff;
+        transform: scale(1.1);
+        z-index: 10;
+      }
+      .card-ul li .card-div1{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #c1c1c1;
+      }
+      .card-ul .lis .card-div1{
+        border-bottom: 1px solid #fff;
+      }
+      .card-ul li .card-div2{
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+      .card-ul li .card-div1 h4{
+        font-weight: bolder;
+        color: #0ba1e4
+      }
+      .card-ul .lis .card-div1 h4{
+        color: #fff;
+      }
+      .card-ul li .card-div1 a{
+        padding-left:20px;
+        padding-right:20px;  
+      }
+      .card-ul li .card-div2 p{
+        line-height: 3em;
+      }
+      .lis .a-btn{
+        color:#fff;
+        border:1px solid #fff;
+      }
+      .lis .a-btn:hover{
+        color: #0ba1e4;
+        border: 1px solid #fff;
+        background: #fff;
+        transition: all 0.3s;
+      }
+      .a-btn{
+        color: #0ba1e4;
+        border:1px solid #0ba1e4;
+        background: transparent; 
+      }
+      .box4{
+        padding-top:50px; 
+        padding-bottom: 20px;
+      }
+      .btns{
+        color: #0ba1e4;
+        border:1px solid #0ba1e4;
+        background: transparent; 
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.3333333;
+        border-radius: 6px;
+      }
+      .btns:hover{
+        color: #fff;
+        background: #0ba1e4;
+        transition: all 0.3s;
+      }
+      .our-gu{
+        background: #f5f5f5;
+      }
+      .gu-xbox{
+        height: 210px;
+
+      }
+      .gu-xbox .gu-xsbox{
+        border: 1px solid #34a263;
+        height: 180px;
+        /* background: #f5f5f5; */
+        border-radius: 4px;
+        position: relative;
+      }
+      .tupian{
+        width: 100%;
+        height: 50px;
+        top: -48px;
+        text-align: center;
+        position: absolute;
+      }
+      .tupian img{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+      }
+      .gu-xsbox1{
+        padding: 37px 33px;
+      }
+      .gu-xsbox1 .gu-sp{
+        background: #aaa;
+        color: #fff;
+        padding: 0.5% 3.5%;
+        float: left;
+      }
+      .gu-xsbox1 .gu-xsbox3{
+        float: right;
+      }
+      .gu-xsbox3 .box3-p{
+        background: url('./img/position-icon.svg') no-repeat;
+        width: 10px;
+        height: 10px;
+        background-size: 10px 10px;
+        float: left;
+        margin-top: 5px;
+        margin-right: 4px;
+      }
+      .gu-xsbox3 span{
+        color: #aaa;
+        font-size: 12px;
+      }
+      .gu-box1 .box1-p{
+        background: url('./img/yhgl-icon.svg') no-repeat;
+        height: 70px;
+        width: 70px;
+        margin: 40px auto;
+      }
+      .zi-bigbox{
+        padding-top:30px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+
+      }
+      .zi-boxa{
+        padding: 4px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 140px;
+        height: 110px;
+        float: left;
+      }
+      .zi-boxa .zi-img{
+        width: 100%;
+        height: 100%;
+      }
+      .zi-box a{
+        color: #337ab7;
+        text-decoration: none;
+      }
+      .zi-lbox{
+        width: 305px;
+        height: 112px;
+        float: left;
+        margin-left: 15px;
+      }
+      .zi-lbox h4{
+        height: 19px;
+        width: 305px;
+        margin-top: 5px;
+        color: #0ba1e4;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+      }
+      .zi-lbox a:hover{
+        text-decoration: none;
+      }
+      .zi-h:hover{
+        text-decoration: none;
+        font-weight: bolder;
+      }
+      .zi-lbox p{
+        color: #919191;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+        font-size: 12px;
+        padding-top: 3px;
+        margin-bottom:3px;
+      }
+      .zi-sp{
+        margin-left: 112px;
+      }
+      .zi-sp:hover{
+        cursor: pointer;
+        color: #f93;
+      }
+      .zi-lbox span{
+        color: #999;
+        font-size: 12px;
+      }
+      .zixun{
+        font-size: 22px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 45px;
+      }
+      .our-ke{
+        background: #e1e1e1;
+      }
+      .ke-lbox{
+        border: 1px solid #c1c1c1;
+        margin: 20px auto;
+      }
+      .ke-lbox:hover{
+        background: #fafafa;
+        border: 1px solid #0ba1e4;
+        box-shadow: 0 0 10px 0 rgba(45,183,245,0.5);
+      }
+      .ke-lbox img{
+        max-width: 100%;
+        filter: grayscale(100%);
+        /* 滤镜 */
+      }
+      .ke-lbox img:hover{
+        filter: none;
+      }
+      .our-wen{
+        background: rgb(8, 121, 252);
+      }
+      .zms_2{
+        text-align: center;
+      }
+      .zms_2 h1{
+        color: #fff;
+      }
+      .zms_2 .ke-h small{
+        color: #f5f5f5;
+      }
+      .ke-btn{
+        color: #f5f5f5;
+        border:1px solid #fff;
+        background: transparent; 
+        padding: 10px 30px;
+        font-size: 20px;
+        font-weight: bolder;
+        line-height: 1.3333333;
+        border-radius: 6px;
+        margin-top: 20px;
+      }
+      .ke-btn:hover{
+        background: #fff;
+        color:#0ba1e4;
+        transition: all 0.3s;
+      }
+      .our-di{
+        background: #363636;
+      }
+      .di-lbox h4{
+        color: #f5f5f5;
+        margin-top: -10px;
+      }
+      .di-lbox ul{
+        list-style: none;
+      }
+      .di-lbox li{
+        color: #f5f5f5;
+        line-height: 2.5em;
+      }
+      .di-box{
+        border-left: 2px solid #c1c1c1;
+        padding: 20px;
+        height: 150px;
+        margin-top: 20px;
+      }
+      .di-img img{
+        height: 132px;
+        margin-top: -15px;
+      }
+      .di-img p{
+        color: #f5f5f5;
+        text-align: center;
+      }
+      .di-sbox h2 img{
+        width: 40px;
+        height: 40px;
+        margin-top: -10px;
+        margin-right:10px; 
+      }
+      .di-sbox h2{
+        color: #FFF;
+      }
+      .di-sbox{
+        margin-top: -30px;
+      }
+      .our-wei{
+        background: #666;
+        color: #fff;
+        text-align: center;
+      }
+      .gongan{
+        width: 300px;
+        margin:30px auto;
+      }
+      .gongan img{
+        float: left;
+        
+      }
+      .gongan p{
+        float: left;
+        margin-left: 10px;
+      }
+      .top{
+        position: fixed;
+				right: 3px;
+				top: 300px;
+        list-style: none;
+      }
+      .top li{
+        font-size: 30px;
+				color: #0ba1e4;
+        background: white;
+        margin-top: 3px;
+				width: 50px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+        border: 1px solid #0ba1e4;
+      }
+      .top .jiantou{
+        display: none; 
+      }
+      /* .top li div{
+        background: #0ba1e4;
+        color: #FFF;
+        font-weight: bolder;
+        height: 40px;
+        width: 150px;
+        right: 50px;
+        top: 0px;
+        position: absolute;
+      } */
+      @media(max-width:767px){
+        .navs{
+          padding: 0;
+        }
+        .box1 .uls>li.li1::after{
+          content: '';
+					width: 0;
+        }
+        .zixun{
+          margin-top: 800px;
+        }
+        .top li{
+          /* float: left;
+          bottom: 2px; */
+          display: none;
+        }
+        .top{
+          top: 520px;
+        }
+        .top .jiantou{
+          right: 10px;
+          border:none;
+          background: white;
+          color: #333;
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          border-radius: 50%;
+        }
+      }
+      @media (max-width: 991px) and (min-width: 768px){
+        .number{
+          font-size: 50px;
+          line-height: 1.5em; 
+        }
+      }
+        
+    </style>
+</head>
+<body>
+  <div id='header'>
+    <nav class="navbar navbar-default navbar-fixed-top navs">
+        <div class="container box">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+          </div>
+          <div class="collapse navbar-collapse box1" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right uls">
+              <li class='li1'><a href="#">首页</a></li>
+              <li><a href="#">签证指南</a></li>
+              <li><a href="#">签证加急</a></li>
+              <li><a href="#">签证服务</a></li>
+              <li><a href="#">签证资讯</a></li>
+              <li><a href="#">资料下载</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    </div>  
+    <div id="carousel-example-generic hed" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="./img/banner1.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/banner2.jpg" alt="">
+          </div>
+        </div>              
+    </div>
+    <div class="index-row our-data" id="milddle">
+        <div class="cintainer container">
+            <div class="row box2">
+                <div class="col-sm-12 zms_1">
+                    <h1><strong>我们的成绩</strong></h1>
+                    <p class="line line-big"></p>
+                    <h2>
+                        <small>2018年1月1日至2018年12月30日，我们的接待数据。</small>
+                    </h2>
+                </div>
+                <div class='col-sm-3'>
+                  <div class='number'>18,397</div>
+                  <h4 class="title">累计受理申请</h4>
+                </div>
+                <div class='col-sm-3'>
+                  <div class='number'>98.8%</div>
+                  <h4 class="title">综合通过率</h4>
+                </div>
+                <div class='col-sm-3'>
+                  <div class='number'>3,273</div>
+                  <h4 class="title">加急申请人数</h4>
+                </div>
+                <div class='col-sm-3'>
+                  <div class='number'>100%</div>
+                  <h4 class="title">加急成功率</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='index-row our-you'>
+      <div class='container'>
+        <div class="row">
+          <div class='col-sm-12 zms_1'>
+            <h1><strong>我们的优势</strong></h1>
+            <p class="line line-big"></p>
+            <h2>
+                <small>每一份签证申请都是独立个案，每一位申请人都应该被认真对待。</small>
+            </h2>
+          </div>
+          <div class="col-sm-3">
+              <div class="thumbnail time"> 
+                <span class="glyphicon glyphicon-time time-box"></span>
+                <h3>十一年美签经验</h3>
+                <p>2006年开始办理美国签证至今，积累了丰富的首签和拒签再签实用经验。</p>                
+              </div>
+          </div>
+          <div class="col-sm-3">
+              <div class="thumbnail time"> 
+                <span class="glyphicon glyphicon-screenshot time-box"></span>
+                <h3>一对一精准定制</h3>
+                <p>每一位申请人都是独立的签证个案，我们从签证原理开始，为您定制最优方案。</p>                
+              </div>
+          </div>
+          <div class="col-sm-3">
+              <div class="thumbnail time"> 
+                <span class="glyphicon glyphicon-refresh time-box"></span>
+                <h3>高效率即时响应</h3>
+                <p>遇到任何疑问，您都会在第一时间得到我们的正面回应，并进行相关处理。</p>                
+              </div>
+          </div>
+          <div class="col-sm-3">
+              <div class="thumbnail time"> 
+                <span class="glyphicon glyphicon-thumbs-up time-box"></span>
+                <h3>精益求精的态度</h3>
+                <p>死磕完美材料，对签证申请流程中的细节一丝不苟，力争最高通过率。</p>                
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='index-row our-fu'>
+        <div class='container'>
+          <div class="row">
+            <div class='col-sm-12 zms_1'>
+              <h1><strong>我们的服务</strong></h1>
+              <p class="line line-big"></p>
+              <h2>
+                  <small>与美国非移民签证申请相关的所有服务，我们都提供支持。</small>
+              </h2>
+            </div>
+            <div class='box3'>
+              <ul class="card-ul">
+                <li class='col-sm-3 lis'>
+                  <div class="card-div1">
+                    <h4>美国加急预约</h4>
+                    <p>全程加急办理</p>
+                  </div>
+                  <div class="card-div2">
+                    <p>3个工作日内进馆</p>
+                    <p>先加急，后付费</p>
+                    <p>100%加急成功</p>
+                    <p>支持全国五大领域</p>
+                    <p>支持所有证件类型</p>
+                    <a class="btn a-btn" href="#">查看详情</a>
+                  </div>
+                </li>
+                <li class='col-sm-3'>
+                    <div class="card-div1">
+                      <h4>美国商务签证</h4>
+                      <p>B1/B2商务</p>
+                    </div>
+                    <div class="card-div2">
+                      <p>10年多次往返</p>
+                      <p>一对一方案定制</p>
+                      <p>申请材料指导</p>
+                      <p>面签培训</p>
+                      <p>全程解答所有疑问</p>
+                      <a class="btn a-btn" href="#">查看详情</a>
+                    </div>
+                </li>
+                <li class='col-sm-3'>
+                    <div class="card-div1">
+                      <h4>美国免面签</h4>
+                      <p>免面试中信代传递</p>
+                    </div>
+                    <div class="card-div2">
+                      <p>简单申请材料</p>
+                      <p>无须进馆面试</p>
+                      <p>B1/B2十年有效</p>
+                      <p>可加急申请</p>
+                      <p>全流程服务</p>
+                      <a class="btn a-btn" href="#">查看详情</a>
+                    </div>
+                </li>
+                <li class='col-sm-3'>
+                    <div class="card-div1">
+                      <h4>美国留学签证</h4>
+                      <p>F1/F2留学陪读</p>
+                    </div>
+                    <div class="card-div2">
+                      <p>签证方案咨询</p>
+                      <p>申请材料指导</p>
+                      <p>代缴SEVIS费</p>
+                      <p>面签培训</p>
+                      <p>可加急办理</p>
+                      <a class="btn a-btn" href="#">查看详情</a>
+                    </div>
+                </li>
+              </ul>
+            </div> 
+            <div class="col-sm-12 text-center box4">
+              <a href="#" class="btn btns">查看更多服务</a>
+            </div>
+          </div>
+        </div> 
+    </div>
+    <div class='index-row our-gu'>
+      <div class='container'>
+        <div class="row">
+          <div class='col-sm-12 zms_1'>
+            <h1><strong>客户的鼓励</strong></h1>
+            <p class="line line-big"></p>
+            <h2>
+                <small>帮助您解决实际问题，顺利、及时地获得签证，是我们存在的根本价值。</small>
+            </h2>
+          </div>
+          <div class="col-sm-4 gu-box1">
+            <div class="gu-xbox">
+              <div class="gu-xsbox">
+                <h3 class="tupian">
+                  <img src="./img/pingjia1.jpg" alt="">
+                </h3>
+                <div class="gu-xsbox1">
+                  <p>
+                    护照丢了，定了春节行程。11号补好护照约了13号面签，这速度简直惊人，所有的旅行社都说弄不了，来不及了，肯定没戏。多亏了你们，非常感谢！
+                  </p>
+                  <div class="gu-xsbox2">
+                    <span class='gu-sp'>B1商务签证</span>
+                    <div class="gu-xsbox3">
+                      <p class='box3-p'></p>
+                      <span>北京领事馆</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="box1-p"></p>
+          </div>
+          <div class="col-sm-4 gu-box1">
+            <div class="gu-xbox">
+              <div class="gu-xsbox">
+                  <h3 class="tupian">
+                    <img src="./img/pingjia2.jpg" alt="">
+                  </h3>
+                 <div class="gu-xsbox1">
+                   <p>                      
+                      因为我情况很特殊也很难办，白本加多次拒签。感谢你们为我做详细的分析与方案，这次签证终于过了！本来都做好心理准备再拒我就彻底放弃的。谢谢你们！
+                  </p>
+                  <div class="gu-xsbox2">
+                    <span class='gu-sp'>B2旅游签证</span>
+                    <div class="gu-xsbox3">
+                      <p class='box3-p'></p>
+                      <span>广州领事馆</span>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+            </div>
+            <p class="box1-p"></p>
+          </div>
+          <div class="col-sm-4 gu-box1">
+            <div class="gu-xbox">
+              <div class="gu-xsbox">
+                  <h3 class="tupian">
+                    <img src="./img/pingjia3.jpg" alt="">
+                  </h3>
+                  <div class="gu-xsbox1">
+                    <p>                                            
+                        同学推荐过来的，马上就要开学了，加上去年成绩不并理想。多亏你们帮我插队面签，分析面签问题，非常专业。现在签证已经拿到了，我会再介绍同学来。
+                    </p>
+                    <div class="gu-xsbox2">
+                      <span class='gu-sp'>F1留学签证</span>
+                      <div class="gu-xsbox3">
+                        <p class='box3-p'></p>
+                        <span>上海领事馆</span>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <p class="box1-p"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='index-row mei-zi'>
+      <div class='container'>
+        <div class="row">
+          <div class='col-sm-12 zms_1'>
+            <h1><strong>美国签证最新资讯</strong></h1>
+            <p class="line line-big"></p>
+            <h2>
+                <small>中岚签证帮您关注最新美国签证相关政策与新闻。</small>
+            </h2>
+          </div>
+          <div class="col-sm-6">
+            <div class="zi-bigbox">
+              <div class="zi-xbox">
+                <a href="#" class="zi-boxa">
+                  <img src="./img/01.jpg" alt="" class="zi-img">
+                </a>
+              </div>
+              <div class="zi-lbox">
+                <a href="#">
+                    <h4 class="zi-h">92名中国民工被欠薪受困塞班岛 华裔中介扣钱逃匿</h4>
+                </a>
+                <span>时间：2017-05-09 </span>
+                <p>他们大部分来自东北，在去年10月份时，其所在城市的劳务中介公司找到他们，介绍了塞班岛的工作，中介给他们开出每天工作8小时日薪300元、如果加班每小时50元的待遇。民工称他们当时也没</p>
+                <span>作者：中岚签证  clantrip.com</span>
+                <span class="zi-sp">[详细]</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="zi-bigbox">
+              <div class="zi-xbox">
+                <a href="#" class="zi-boxa">
+                  <img src="./img/02.png" alt="" class="zi-img">
+                </a>
+              </div>
+              <div class="zi-lbox">
+                <a href="#">
+                    <h4 class="zi-h">2017年赴美签证新规定</h4>
+                </a>
+                <span>时间：2017-05-08 </span>
+                <p>美国国务院领事事务局2016年10月6日公告，自2016年11月1日开始，申请美国护照或签证，要使用没有戴眼镜的照片。</p>
+                <span>作者：中岚签证  clantrip.com</span>
+                <span class="zi-sp">[详细]</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="zi-bigbox">
+              <div class="zi-xbox">
+                <a href="#" class="zi-boxa">
+                  <img src="./img/03.jpg" alt="" class="zi-img">
+                </a>
+              </div>
+              <div class="zi-lbox">
+                <a href="#">
+                    <h4 class="zi-h">美国有多少人缴纳个人所得税及其它</h4>
+                </a>
+                <span>时间：2017-05-08 </span>
+                <p>前几天我们有一篇博文介绍了美国个人所得税税率，不少网友提出许多有关美国个税税收的问题，这里就集中回答。由于个税牵涉到联邦所得税以及 </p>
+                <span>作者：中岚签证  clantrip.com</span>
+                <span class="zi-sp">[详细]</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="zi-bigbox">
+              <div class="zi-xbox">
+                <a href="#" class="zi-boxa">
+                  <img src="./img/04.jpg" alt="" class="zi-img">
+                </a>
+              </div>
+              <div class="zi-lbox">
+                <a href="#">
+                    <h4 class="zi-h">多国签证利好频出，带火春节出境游</h4>
+                </a>
+                <span>时间：2017-04-15 </span>
+                <p>近一两个月来，澳大利亚、马来西亚、以色列、阿联酋、塞尔维亚、泰国等国纷纷对中国公民捧出签证利好，加上春节临近，大为提振了南京市民的旅游热情。记者从旅游市场上获悉，春节期间 </p>
+                <span>作者：中岚签证  clantrip.com</span>
+                <span class="zi-sp">[详细]</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 zixun">
+            <a href="http://www.clantrip.com/index.php?m=content&c=index&a=lists&catid=10">更多资讯>>></a>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class='index-row our-ke'>
+      <div class='container'>
+        <div class="row">
+          <div class='col-sm-12 zms_1'>
+            <h1><strong>我们的客户</strong></h1>
+            <p class="line line-big"></p>
+            <h2>
+                <small>他们与中岚建立了合作关系</small>
+            </h2>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client1.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client2.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client3.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client4.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client5.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client6.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client7.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client8.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client9.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client10.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client11.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 ke-box">
+            <div class="ke-lbox">
+              <img src="./img/client12.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='index-row our-wen'>
+      <div class='container'>
+        <div class="row">
+          <div class='col-sm-12 zms_2'>
+            <h1><strong>更多疑问，全面解答</strong></h1>
+            <p class='lines line-blue'></p>
+            <h2 class="ke-h">
+                <small>资深美签专家在线为您解答所有疑惑</small>
+            </h2>
+            <a href="" class="btn ke-btn">免费咨询</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="index-row our-di">
+      <div class='container'>
+        <div class="row">
+          <div class="col-xs-6 col-sm-2 di-box">
+            <div class="di-lbox">
+              <h4>常用工具</h4>
+              <ul>
+                <li>电码查询</li>
+                <li>护照追踪</li>
+                <li>资料下载</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-2 di-box">
+            <div class="di-lbox">
+              <h4>快捷链接</h4>
+              <ul>
+                <li>签证资讯</li>
+                <li>签证指南</li>
+                <li>常见问题</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-2 di-box">
+            <div class="di-lbox">
+                <h4>关于我们</h4>
+                <ul>
+                  <li>关于中岚</li>
+                  <li>服务协议</li>
+                  <li>收藏本站</li>
+                </ul>
+              </div>
+          </div>
+          <div class="col-xs-6 col-sm-2 di-box">
+            <div class="di-img">
+              <img src="./img/wechat.png" alt="">
+              <p>微信号：clanus</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 di-box di-box1">
+            <div class='di-sbox'>
+              <h2>
+                <img src="./img/pc-footer-phone.png" alt="">010-64648731
+              </h2>
+              <h2>
+                <img src="./img/pc-footer-qq.png" alt="">54350970
+              </h2>
+              <h2>
+                <img src="./img/pc-footer-mob.png" alt="">18810888729
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="index-row our-wei">
+      <div class='container'>
+        <div class="row">
+          <div class="col-sm-12">
+            <p>Copyright © 2006-2019 clantrip.com All Rights Reversed. 中岚签证   京ICP备16015317号</p>
+            <div class="gongan">
+              <img src="./img/ghs.png" alt="">
+              <p>京公网安备 11010102002687号</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class=top>
+      <li class="iconfont icon-zixun">
+          <!-- <div>在线咨询</div> -->
+      </li>
+      <li class="iconfont icon-qq">
+        <!-- <div>QQ咨询</div> -->
+      </li>
+      <li class="iconfont icon-weixin">
+        <!-- <div>010-64648731</div> -->
+      </li>
+      <li class="iconfont icon-dianhua-1">
+        <!-- <div><img src="./img/wechat.png" alt=""></div> -->
+      </li>
+      <li class="iconfont icon-jiantou-copy jiantou"></li>
+    </ul>
+    <!-- <div class="card-xuan">
+      <div>在线咨询</div>
+      <div>QQ咨询</div>
+      <div>010-64648731</div>
+      <div><img src="./img/wechat.png" alt=""></div>
+    </div> -->
+</body>
+</html>
